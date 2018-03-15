@@ -10,11 +10,18 @@
 }
 
 
+body {margin:3%; padding:0px; text-align:center;}
+/*
+a, a:visited {text-decoration:none; color:#3366CC;}
+a:hover {text-decoration:none; color:#FF6633;}
+a.opacity img, img.opacity, .opacity {filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5; -khtml-opacity:0.5;}
+a.opacity:hover img, img.opacity:hover, .opacity:hover {filter:alpha(opacity=100); -moz-opacity:1.0; opacity:1.0; -khtml-opacity:1.0;}*/
+
 
 div.backdrop {
-  padding: 3%;
+  /*padding: 3%;*/
   width: inherit;
-  height: 80%;
+  /*height: 80%;*/
   text-align: center;
 }
 
@@ -25,7 +32,7 @@ div.header {
   border-radius: 40px  40px 0px 0px;
   margin: 0 auto;
   width: inherit;
-  height:600px;
+  height:auto;
   background-color: #5a4646;
 
 }
@@ -37,10 +44,16 @@ div.header:hover {
 }
 
 div.content {
+  border: 3px white solid;
+  border-radius: 8% 8% 0% 0%;
   width: inherit;
-  height:950px;
-  padding: 5%;
+  height: 1000px;;
+  padding: 3%;
   background-color: grey;
+}
+
+div.content p {
+  color:yellow;
 }
 
 div.content-left {
@@ -107,6 +120,71 @@ div.content-right:hover {
     line-height: 600px;
 }
 
+
+div.content-left-2 {
+  text-align: center;
+  vertical-align: middle;
+  height: 600px;
+  width: 600px;
+  background-image: url(../images/venice.jpg);
+  background-size: contain;
+  transition: all .2s ease-in-out;
+  float: left;
+  opacity: 0.3;
+  border: 3px white solid;
+  border-radius: 50%;
+
+}
+div.content-left-2:hover {
+  transform: scale(1.1);
+  float: left;
+  background-image: url(../images/venice.jpg);
+  opacity: 1;
+  border: 3px white solid;
+}
+.content-left-2:hover::before{
+    color: white;
+    font-family: font_select;
+    font-size: 60px;
+    content: 'Venice';
+    position: relative;
+    top: 0;
+    text-align: center;
+    display: inline-block;
+    line-height: 600px;
+}
+div.content-right-2 {
+  text-align: center;
+  vertical-align: middle;
+  height: 600px;
+  width: 600px;
+  background-image: url(../images/rome.jpg);
+  background-size: contain;
+  transition: all .2s ease-in-out;
+  float: right;
+  opacity: 0.3;
+  border: 3px white solid;
+  border-radius: 50%;
+}
+div.content-right-2:hover {
+  transform: scale(1.1);
+  float: right;
+  background-image: url(../images/rome.jpg);
+  opacity: 1;
+  border: 3px white solid;
+}
+.content-right-2:hover::before{
+    color: white;
+    font-family: font_select;
+    font-size: 60px;
+    content: 'Rome';
+    position: relative;
+    top: 0;
+    text-align: center;
+    display: inline-block;
+    line-height: 600px;
+}
+
 .largeLetters {
   font-size: 80px;
   color: white;
@@ -116,6 +194,37 @@ div.content-right:hover {
   font-size: 80px;
   color: white;
   font-family:font_select;
+}
+.smalletters {
+  font-size: 50px;
+  color: white;
+  font-family:font_select;
+  text-align: left;
+}
+.tinyletters {
+  font-size: 20px;
+  color: white;
+  font-family: myFirstFont;
+  text-align: center;
+}
+#kenya{
+  font-size: 50px;
+  color: white;
+  font-family:font_select;
+  text-align: left;
+}
+#italy{
+  font-size: 50px;
+  color: white;
+  font-family:font_select;
+  text-align: left;
+}
+.scrollarrows{
+  width: auto;
+  height: inherit;
+  padding: 3%;
+  margin: 0 auto;
+
 }
 
 .buttonTs {
@@ -137,12 +246,17 @@ div.content-right:hover {
   color: black;
 }
 
+.clear {
+  clear:both;
+}
+
 .navbar {
     width: 100%;
     border-radius: 0px 0px 20px 20px;
     float: left;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    margin:0 0 2% 0;
 }
 
 .navbar a {
