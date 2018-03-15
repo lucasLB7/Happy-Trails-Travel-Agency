@@ -3,6 +3,11 @@
     src: url(../fonts/f3.ttf);
     font-weight: bold;
 }
+@font-face {
+    font-family: font_select;
+    src: url(../fonts/f4.ttf);
+    font-weight: bold;
+}
 
 
 
@@ -39,32 +44,78 @@ div.content {
 }
 
 div.content-left {
-  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  height: 600px;
+  width: 600px;
+  background-image: url(../images/lions.jpeg);
+  background-size: contain;
   transition: all .2s ease-in-out;
   float: left;
   opacity: 0.3;
+  border: 3px white solid;
+  border-radius: 50%;
+
 }
 div.content-left:hover {
   transform: scale(1.1);
   float: left;
+  background-image: url(../images/lions.jpeg);
   opacity: 1;
+  border: 3px white solid;
+}
+.content-left:hover::before{
+    color: white;
+    font-family: font_select;
+    font-size: 60px;
+    content: 'Maasai Mara';
+    position: relative;
+    top: 0;
+    text-align: center;
+    display: inline-block;
+    line-height: 600px;
 }
 div.content-right {
-  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  height: 600px;
+  width: 600px;
+  background-image: url(../images/mombasa.jpg);
+  background-size: contain;
   transition: all .2s ease-in-out;
   float: right;
   opacity: 0.3;
+  border: 3px white solid;
+  border-radius: 50%;
 }
 div.content-right:hover {
   transform: scale(1.1);
   float: right;
+  background-image: url(../images/mombasa.jpg);
   opacity: 1;
+  border: 3px white solid;
+}
+.content-right:hover::before{
+    color: white;
+    font-family: font_select;
+    font-size: 60px;
+    content: 'Mombasa';
+    position: relative;
+    top: 0;
+    text-align: center;
+    display: inline-block;
+    line-height: 600px;
 }
 
 .largeLetters {
-  transform: scale(1.1);
-  float: right;
-  opacity: 1;
+  font-size: 80px;
+  color: white;
+  font-family:myFirstFont;
+}
+.medetters {
+  font-size: 80px;
+  color: white;
+  font-family:font_select;
 }
 
 .buttonTs {
