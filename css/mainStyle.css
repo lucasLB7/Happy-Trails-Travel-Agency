@@ -31,10 +31,59 @@ div.header:hover {
 
 }
 
+div.content {
+  width: inherit;
+  height:950px;
+  padding: 5%;
+  background-color: grey;
+}
+
+div.content-left {
+  position: relative;
+  transition: all .2s ease-in-out;
+  float: left;
+  opacity: 0.3;
+}
+div.content-left:hover {
+  transform: scale(1.1);
+  float: left;
+  opacity: 1;
+}
+div.content-right {
+  position: relative;
+  transition: all .2s ease-in-out;
+  float: right;
+  opacity: 0.3;
+}
+div.content-right:hover {
+  transform: scale(1.1);
+  float: right;
+  opacity: 1;
+}
+
 .largeLetters {
-  font-size: 80px;
-  color: white;
-  font-family:myFirstFont;
+  transform: scale(1.1);
+  float: right;
+  opacity: 1;
+}
+
+.buttonTs {
+  background-color: white;
+  border: 2px white solid;
+  border-radius: 0px 50px 0px 50px;
+  opacity: 50%;
+  width: 8%;
+  height: 4%;
+  color: #5a4646;
+}
+.buttonTS:hover {
+  border: 2px white solid;
+  border-radius: 0px 50px 0px 50px;
+  background-color: white;
+  opacity: 100%;
+  width: 12%;
+  height: 6%;
+  color: black;
 }
 
 .navbar {
