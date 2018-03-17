@@ -72,22 +72,22 @@ div.content-left {
 }
 div.content-left:hover {
   transform: scale(1.1);
-  float: left;
+  float: left;                                                                                            
   background-image: url(../images/lions.jpeg);
   opacity: 1;
   border: 3px white solid;
 }
-.content-left:hover::before{
-    color: white;
-    font-family: font_select;
-    font-size: 60px;
-    content: 'Maasai Mara';
-    position: relative;
-    top: 0;
-    text-align: center;
-    display: inline-block;
-    line-height: 600px;
-}
+    .content-left:hover::before{
+        color: white;
+        font-family: font_select;
+        font-size: 60px;
+        content: 'Maasai Mara';
+        position: relative;
+        top: 0;
+        text-align: center;
+        display: inline-block;
+        line-height: 600px;
+    }
 div.content-right {
   text-align: center;
   vertical-align: middle;
